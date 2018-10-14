@@ -17,7 +17,7 @@ You have different teams, working on different applications, having different an
 
 ## Challenges of scaling across multiple cloud providers
 
-You've decided now upon the cloud(s) to use, so you go back and think about the initial problem. You have an application with a microservice deployment architecture, running containers and this needs to be scaled. Here is where Kubernetes comes into play. Essentially Kubernetes is a solution which helps you manage and orchestrate containerized applications in a cluster of nodes. 
+You've decided now upon the cloud(s) to use, so you go back and think about the initial problem. You have an application with a microservice deployment architecture, running containers and this needs to be scaled. Here is where Kubernetes comes into play. Essentially Kubernetes is a solution which helps you manage and orchestrate containerized applications in a cluster of nodes. Although Kubernetes will help you manage and scale deployments, nodes and clusters, it won't you help easily manage and scale them across cloud providers. More on that later.
 
 A Kubernetes cluster is a set of machines (physical/virtual), resourced by Kubernetes to run applications.
 - [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) are units that control one or more containers, scheduled as one application. Typically you should create one Pod per application, so you can scale and control them separately.
